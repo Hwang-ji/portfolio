@@ -18,26 +18,132 @@
             <i class="fab fa-diaspora"></i>
             <a href="#">Jieun</a>
         </div>
-        <div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonial</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" data-link="#home">Home</li>
+            <li class="navbar__menu__item" data-link="#about">About</li>
+            <li class="navbar__menu__item" data-link="#work">My work</li>
+            <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
+
+    <!-- Home -->
+    <section id="home">
+        <div class="home__container">
+            <h1 class="home__title">Hello, <br/>I'm Joyful Coder</h1>
+            <h2 class="home__description">A Software Front-end Engineer</h2>
+            <!-- <button class="home__contact">Contact Me</button> -->
+        </div>    
+    </section>
+        
     <!-- About -->
-    <section id="about"></section>
-     <!-- Skills -->
-    <section id="skills"></section>
+    <section id="about" class="section section__container">
+        <h1>About me</h1>
+        <h2>work experience</h2>
+        <p>
+            비트교육센터에서 자바기반 프론트엔드 전문 개발자 과정을 수료하고 과학기술정보통신부 전산실에서 내부망 사이트 과학in과<br/>
+            자료공유사이트 등 여러 시스템을 맡아 운영하고 추가 개발 업무를 하였습니다. 그 후, SI회사로 이직하여 모바일앱 클라이언트 개발과<br/>
+            전자문서 서식 개발, 경영관리 프로그램 개발 등 다양한 프로젝트 경험을 쌓았습니다.
+        </p>
+        <div class="about__jobs">
+            <div class="job">
+                <div class="job__logo">
+                    <img src="images/jobs/msit.png" alt="과기부">
+                </div>
+                <div class="job__description">
+                    <p class="job__name">과학기술정보통신부<br/>전산실근무</p>
+                    <p class="job__period">2018 Apr - 2018 Oct</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__logo">
+                    <img src="images/jobs/shin.png" alt="신세계">
+                </div>
+                <div class="job__description">
+                    <p class="job__name">신세계 포인트 전자신청서<br/>수정 개발</p>
+                    <p class="job__period">2019 Apr - 2019 June</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__logo">
+                    <img src="images/jobs/mega.png" alt="메가박스">
+                </div>
+                <div class="job__description">
+                    <p class="job__name">메가박스 차세대 영업정보<br/>시스템 서식개발</p>
+                    <p class="job__period">2019 July - 2019 July</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__logo">
+                    <img src="images/jobs/kb1.png" alt="kb은행">
+                </div>
+                <div class="job__description">
+                    <p class="job__name">KB국민은행 디지털창구<br/>서식관리시스템 고도화</p>
+                    <p class="job__period">2019 Aug - 2020 Mar</p>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__logo">
+                    <img src="images/jobs/kb2.png" alt="kb증권">
+                </div>
+                <div class="job__description">
+                    <p class="job__name">KB증권 wholesale CRM<br/>모바일앱 WINNER 개발 </p>
+                    <p class="job__period">2020 May - 2020 Sept</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Work -->
-    <section id="work"></section>
-    <!-- Testmonials -->
-    <section id="testmonials"></section>
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h2>Projects</h2>
+            <div class="work__projects">
+                <a href="https://github.com/Hwang-ji/youtube" class="project" target="_blank" data-type="front-end">
+                    <img class="project__img" src="images/projects/project1.png" alt="project1">
+                    <div class="project__description">
+                        <h3>React Project</h3>
+                        <span>Youtube clone project with React </span>
+                    </div>
+                </a>
+                <a href="https://hwang-ji.github.io/carrotGame/" class="project" target="_blank" data-type="front-end">
+                    <img class="project__img" src="images/projects/project2.png" alt="project2">
+                    <div class="project__description">
+                        <h3>Carrot Game</h3>
+                        <span>Vanilla JS with HTML and CSS</span>
+                    </div>
+                </a>
+                <a href="https://ji881111.github.io/JSMomonton/" class="project" target="_blank" data-type="mobile">
+                    <img class="project__img" src="images/projects/project3.png" alt="project3">
+                    <div class="project__description">
+                        <h3>Momonton</h3>
+                        <span>Vanilla JS with HTML and CSS</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
-    <section id="contact"></section>
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">ji881111@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/Hwang-ji" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p class="contact__rights">2021 Joyful coding Jieun - All rights reserved</p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
 </body>
 </html>
