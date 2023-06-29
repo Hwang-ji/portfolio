@@ -12,4 +12,4 @@
 
 ## Screenshot
 
-<img width="700" src="https://github.com/Hwang-ji/portfolio/assets/79661326/ab64d791-464d-490e-b77f-dfe9d09de813">
+<img width="700" src="https://github.com/Hwang-ji/portfolio/assets/79661326/d6b8b690-0bb9-4712-93e4-6b3323d89039">
