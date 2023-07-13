@@ -23,7 +23,6 @@ const linkAction = () => {
 };
 navLink.forEach(n => n.addEventListener("click", linkAction));
 
-
 // swiperProjects
 let swiperProjects = new Swiper(".projects__container", {
   loop: true,
@@ -45,12 +44,11 @@ let swiperProjects = new Swiper(".projects__container", {
   },
 });
 
-
 // scroll sections active link
 const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
-  const scrollY = window.pageYOffset;
+  const scrollY = window.scrollY;
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight,
@@ -69,7 +67,6 @@ const scrollActive = () => {
 };
 window.addEventListener("scroll", scrollActive);
 
-
 // show scroll up
 const scrollUp = () => {
   const scrollUpBtn = document.getElementById("scroll-up");
@@ -78,7 +75,6 @@ const scrollUp = () => {
     : scrollUpBtn.classList.remove("show-scroll");
 };
 window.addEventListener("scroll", scrollUp);
-
 
 // change background header
 const scrollHeader = () => {
@@ -90,7 +86,6 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 
-
 // scroll reveal animation
 const sr = ScrollReveal({
   origin: "top",
@@ -100,7 +95,7 @@ const sr = ScrollReveal({
   //reset: true /* Animation repeat */,
 });
 
-sr.reveal( `.projects__container, .footer__container`);
+sr.reveal(`.projects__container, .footer__container`);
 sr.reveal(`.home__images img`, { delay: 300, origin: "bottom", interval: 100 });
 sr.reveal(`.skills__content:nth-child(1),.contact__content`, {
   origin: "left",
